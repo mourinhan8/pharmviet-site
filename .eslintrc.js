@@ -22,9 +22,9 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue-a11y', 'prettier', 'vue'],
   // add your custom rules here
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
+    'prettier/prettier': ['warn', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
     'import/extensions': [
-      'error',
+      'warn',
       'always',
       {
         js: 'never',
@@ -39,7 +39,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'class-methods-use-this': 0,
     'vue/max-attributes-per-line': 'off',
-    'vue/component-name-in-template-casing': [1, 'kebab-case'],
+    'vue/component-name-in-template-casing': [0, 'kebab-case'],
   },
   settings: {
     'import/core-modules': [
