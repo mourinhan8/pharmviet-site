@@ -2,7 +2,7 @@
   <header class="flex items-center py-4 md:py-8">
     <div class="header__logo">
       <nuxt-link to="/">
-        <img :src="logo" alt="Logo" />
+        <img class="logo" src="@/static/images/uploads/logo.png" alt="Logo" />
       </nuxt-link>
     </div>
 
@@ -44,9 +44,12 @@ export default class Header extends Vue {
 .nav {
   ul li > a {
     &.nuxt-link-active {
-      color: $bluise;
+      color: $orange;
       @apply font-bold;
     }
   }
+}
+.logo {
+  width: 150px;
 }
 </style>

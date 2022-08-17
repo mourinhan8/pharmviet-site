@@ -7,7 +7,7 @@
         <div class="mb-12 xl:mb-0">
           <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
 
-          <form
+          <!-- <form
             v-else
             @submit.prevent="handleSubmit"
             name="signups"
@@ -17,7 +17,19 @@
             <input
               ref="emailInput"
               v-model="form.email"
-              class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+              class="
+                appearance-none
+                mb-36
+                bg-transparent
+                border-none
+                w-full
+                text-gray-700
+                mr-3
+                py-1
+                px-2
+                leading-tight
+                focus:outline-none
+              "
               type="text"
               name="email"
               placeholder="your@email.com"
@@ -25,20 +37,28 @@
             />
 
             <button
-              class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
+              class="
+                flex-shrink-0
+                bg-blue-500
+                hover:bg-blue-700
+                border-blue-500
+                hover:border-blue-700
+                text-sm
+                border-4
+                text-white
+                py-1
+                px-2
+                rounded
+              "
               type="submit"
             >
               Sign Up
             </button>
-          </form>
+          </form> -->
         </div>
       </div>
       <div class="flex flex-col w-full xl:w-2/5">
-        <img
-          alt="Hero"
-          class="rounded shadow-xl"
-          src="https://source.unsplash.com/random/720x400"
-        />
+        <img alt="Hero" class="rounded shadow-xl" :src="cardVisit" />
       </div>
     </div>
   </section>
@@ -57,6 +77,8 @@ import settings from '@/content/settings/general.json';
 export default class Home extends Vue {
   welcomeText = settings.welcomeText;
 
+  cardVisit = settings.cardVisit;
+
   get posts(): Post[] {
     return this.$store.state.posts;
   }
@@ -73,11 +95,12 @@ export default class Home extends Vue {
       .join('&');
   }
 
-  validEmail(email): boolean {
-    // eslint-disable-next-line
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-  }
+  // validEmail(email): boolean {
+  //   // eslint-disable-next-line
+  //   const re =
+  //     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  //   return re.test(email);
+  // }
 
   async handleSubmit(): Promise<void> {
     if (!this.validEmail(this.form.email)) {
