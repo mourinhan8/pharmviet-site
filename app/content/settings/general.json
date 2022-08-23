@@ -5,6 +5,7 @@
   "logo": "/images/uploads/logo.svg",
   "icon": "/images/uploads/logo.png",
   "cardVisit": "/images/uploads/cardvisit.png",
+  "pharmacyPic": "/images/uploads/pharmacy.jpeg",
   "loadingColor": "#0b3765",
   "seoDescription": "A quickstart for Nuxt & Netlify CMS",
   "seoMetaImage": ""

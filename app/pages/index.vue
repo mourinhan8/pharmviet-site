@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="flex flex-col w-full xl:w-2/5">
-        <img alt="Hero" class="rounded shadow-xl" :src="cardVisit" />
+        <img alt="Hero" class="rounded shadow-xl" :src="pharmacy" />
       </div>
     </div>
   </section>
@@ -77,7 +77,7 @@ import settings from '@/content/settings/general.json';
 export default class Home extends Vue {
   welcomeText = settings.welcomeText;
 
-  cardVisit = settings.cardVisit;
+  pharmacy = settings.pharmacyPic;
 
   get posts(): Post[] {
     return this.$store.state.posts;
