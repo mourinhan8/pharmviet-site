@@ -50,6 +50,6 @@ export default class Header extends Vue {
   }
 }
 .logo {
-  width: 150px;
+  width: 27%;
 }
 </style>
