@@ -32,6 +32,10 @@ export default class DefaultLayout extends Vue {}
 //   margin-top: auto;
 // }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .nuxt {
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
