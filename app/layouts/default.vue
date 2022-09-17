@@ -4,11 +4,6 @@
       <site-header />
       <nuxt class="nuxt" />
     </div>
-    <div class="svg-container">
-      <svg viewBox="0 0 10 1">
-        <polygon stroke="none" stroke-width="0" fill="#ee9d2b" points="0,0.6 0,1 10,1 10,0" />
-      </svg>
-    </div>
     <site-footer />
   </main>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <footer class="footer -mx-4 md:mx-0">
     <div class="container mx-auto pb-6 flex justify-end">
-      <div v-html="$md.render(footerText)" class="home__welcome markdown text-right" />
+      <div v-html="$md.render(footerText)" class="home__welcome markdown text-right pl-2.5" />
     </div>
   </footer>
 </template>
