@@ -2,7 +2,7 @@
   <header class="flex items-center py-4 md:py-8">
     <div class="header__logo">
       <nuxt-link to="/">
-        <img class="logo" src="@/static/images/uploads/logo.png" alt="Logo" />
+        <img class="logo" :src="logo" alt="Logo" />
       </nuxt-link>
     </div>
 
@@ -50,6 +50,6 @@ export default class Header extends Vue {
   }
 }
 .logo {
-  width: 27%;
+  width: 50%;
 }
 </style>

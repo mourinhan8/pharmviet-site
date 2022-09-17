@@ -1,12 +1,13 @@
 {
   "title": "Homev",
   "titleTemplate": "| Pharmviet",
-  "welcomeText": "### CÔNG TY CỔ PHẦN PHARMVIET\nTel. +84 37 707 31 64\nEmail: Info@pharmviet.vn\nĐịa chỉ: Căn hộ F1, Số 14 Thụy Khuê, phường Thụy Khuê, quận Tây Hồ, Hà Nội",
+  "welcomeText": "# Website đang được hoàn thiện",
   "logo": "/images/uploads/logo.svg",
-  "icon": "/images/uploads/logo.png",
+  "icon": "/images/uploads/icon.png",
   "cardVisit": "/images/uploads/cardvisit.png",
   "pharmacyPic": "/images/uploads/pharmacy.jpg",
   "loadingColor": "#0b3765",
-  "seoDescription": "A quickstart for Nuxt & Netlify CMS",
-  "seoMetaImage": ""
+  "seoDescription": "This is the official website of pharmviet",
+  "seoMetaImage": "",
+  "footerText": "### CÔNG TY CỔ PHẦN PHARMVIET\nTel. +84 37 707 31 64\nEmail: Info@pharmviet.vn\nĐịa chỉ: Căn hộ F1, Số 14 Thụy Khuê, phường Thụy Khuê, quận Tây Hồ, Hà Nội"
 }
